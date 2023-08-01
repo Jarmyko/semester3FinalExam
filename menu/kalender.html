@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J_GAMING</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <link rel="stylesheet" href="../style/calendar.css">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="logo">
+                <h4><a href="../index.html">J_GAMING</a></h4>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button>Berita</button>
+                        <div class="dropdown-content">
+                            <a href="berita-game.html">Berita Game</a>
+                            <a href="berita-pc.html">Berita PC</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button>Review</button>
+                        <div class="dropdown-content">
+                            <a href="review-game.html">Review Game</a>
+                            <a href="review-pc.html">Review PC</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="rekomendasi.html">Rekomendasi</a>
+                </li>
+                <li>
+                    <a href="#">Kalender</a>
+                </li>
+                <li>
+                    <a href="javascript.html">JavaScript</a>
+                </li>
+                <li>
+                    <a href="about-me.html">About_Me</a>
+                </li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox" name="" id="" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- flex main column & Calendar -->
+    <div class="container">
+        <main>
+            <div class="title-head">Kalender Rilis Game</div>
+            <div class="underline"></div>   
+            <br>
+            <div class="flex-calender">
+                <div class="wrapper-calendar">
+                    <div class="head-calendar">
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <i id="prev" class="material-icons">chevron_left</i>
+                            <i id="next" class="material-icons">chevron_right</i>
+                        </div>
+                    </div>
+
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content column -->
+            <div class="title-head">Release Date</div>
+            <div class="underline"></div>
+            <div class="flex-wrap">
+                <div class="card-flex">
+                    <img src="../img/SS 012.png" alt="">
+                    <div class="p-flex">
+                        <p>Daftar Game yang Dirilis Pada Desember 2022</p>
+                        <p>...</p>
+                    </div>
+                </div>
+        </main>
+
+        <!-- Flex aside -->
+        <aside>
+            <div class="flex-container-text">
+                <div class="title-aside">
+                    Popular
+                </div>
+                <div class="underline-aside"></div>
+                <div class="flex-text-aside">
+                    <a href="artikel/artikel.html">Review Stardew Valley: Harvest Moon Bergaya Pixel</a>
+                    <a href="#">AMD Merilis GPU terbaru bernama RDNA 3</a>
+                    <a href="#">Stardew Valley Terjual Lebih Dari 20 Juta Kopi</a>
+                </div>
+            </div>
+
+
+
+            <div class="ad-box">
+                <p>Ad Slot</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© J_GAMING SINCE 2022</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

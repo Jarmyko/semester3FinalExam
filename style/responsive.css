@@ -1,0 +1,320 @@
+/* Breakpoints */
+/* Tablet */
+@media (max-width: 500px) {
+
+    /* Navbar */
+    nav .logo {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    /* Navbar */
+
+    /* Grid Header */
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'kotak1 kotak1 kotak2 kotak2 kotak3 kotak3'
+            'kotak1 kotak1 kotak2 kotak2 kotak3 kotak3'
+            'kotak1 kotak1 kotak4 kotak4 kotak5 kotak5'
+            'kotak1 kotak1 kotak4 kotak4 kotak5 kotak5';
+        gap: 10px;
+        background-color: #fff;
+        padding: 5px;
+    }
+
+    .grid-container>div>a {
+        margin: 30px 5px;
+    }
+
+    /* Grid Header */
+
+    /* Main */
+    main {
+        width: 70%;
+        margin: 0 15px;
+    }
+
+    /* Main */
+
+    /* Aside */
+    aside {
+        width: 30%;
+    }
+
+    /* Aside */
+}
+
+/* Mobile 414px*/
+@media screen and (max-width: 750px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navbar */
+    .menu-toggle {
+        display: flex;
+        z-index: 2;
+    }
+
+    nav .logo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 33px;
+        letter-spacing: 3px;
+        z-index: 2;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(57, 57, 57);
+        z-index: 2;
+        transform: translateY(-100%);
+        transition: all 0.85s;
+    }
+
+    nav ul.slide {
+        transform: translateY(0);
+    }
+
+    /* Dropdown */
+    .dropdown .dropdown-content {
+        position: absolute;
+        margin-left: -27px;
+    }
+
+    .dropdown .dropdown-content a {
+        display: block;
+    }
+
+    /* Navbar */
+
+    /* Grid Header */
+    .kotak1 img {
+        position: absolute;
+        width: 405px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 40% 100%;
+    }
+
+    .kotak2 img {
+        position: absolute;
+        width: 405px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 40% 100%;
+    }
+
+    .kotak3 img {
+        position: absolute;
+        width: 405px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 40% 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .grid-container>div {
+        height: 200px;
+        
+    }
+
+    .grid-container>.kotak4 {
+        display: none;
+    }
+
+    .grid-container>.kotak5 {
+        display: none;
+    }
+
+    .grid-container>div>a {
+        width: 97.8%;
+
+    }
+
+    /* Grid Header */
+
+    /* Main */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: auto;
+    }
+
+    .underline { 
+        width: 385.5px;
+    }
+
+    .flex-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-flex {
+        height: 400px;
+        width: 383.5px;
+        background-color: rgb(57, 57, 57);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        flex-wrap: wrap;
+    }
+
+    .card-flex > img {
+        width: 383.5px;
+    }
+
+    .p-flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 10px;
+    }
+    /* Main */
+
+    /* Aside */
+    aside {
+        width: auto;
+    }
+
+    .ad-box {
+        margin: auto;
+    }
+
+    .flex-wrap-row {
+        display: none;
+    }
+    /* Aside */
+}
+
+
+/* Mobile 360px*/
+@media screen and (max-width: 411px) {
+    .kotak1 img {
+        position: absolute;
+        width: 365.5px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 40% 100%;
+    }
+
+    .kotak2 img {
+        position: absolute;
+        width: 365.5px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 40% 100%;
+    }
+
+    .kotak3 img {
+        position: absolute;
+        width: 365.5px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 40% 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .grid-container>div {
+        height: 250px;
+        
+    }
+
+    .grid-container>.kotak4 {
+        display: none;
+    }
+
+    .grid-container>.kotak5 {
+        display: none;
+    }
+
+    .grid-container>div>a {
+        width: 97.6%;
+
+    }
+
+    /* Grid Header */
+
+    /* Main */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        width: auto;
+    }
+
+    .underline { 
+        width: 349.5px;
+        margin: 0 -5px;
+    }
+
+    .flex-wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -5px;
+    }
+
+    .card-flex {
+        height: 350px;
+        width: 345.5px;
+        background-color: rgb(57, 57, 57);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        flex-wrap: wrap;
+    }
+
+    .card-flex > img {
+        width: 345.5px;
+    }
+
+    .p-flex {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+    /* Main */
+
+    /* Aside */
+    aside {
+        width: auto;
+    }
+
+    .ad-box {
+        margin: auto;
+    }
+
+    .flex-wrap-row {
+        display: none;
+    }
+    /* Aside */
+}

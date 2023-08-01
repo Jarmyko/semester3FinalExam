@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+}
+
+/* Navbar */
+
+nav {
+    position: relative;
+    display: flex;
+    background-color: rgb(57, 57, 57);
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+}
+
+nav .logo a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 37px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 45%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: darkgray;
+}
+
+/* Navbar - Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    color: darkgray;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(57, 57, 57);
+    min-width: 160px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navbar - Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+/* Navbar - Hamburger Menu Animation*/
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    background-color: #fff;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    background-color: #fff;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Navbar */
+
+/* Grid Header */
+.kotak1 {
+    grid-area: kotak1;
+
+}
+
+.kotak1 img {
+    position: absolute;
+    width: 415px;
+    height: 405px;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
+.kotak2 {
+    height: 200px;
+    grid-area: kotak2;
+}
+
+.kotak2 img {
+    position: absolute;
+    width: 415px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
+.kotak3 {
+    grid-area: kotak3;
+}
+
+.kotak3 img {
+    position: absolute;
+    width: 415px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
+.kotak4 {
+    height: 200px;
+    grid-area: kotak4;
+
+}
+
+.kotak4 img {
+    position: absolute;
+    width: 415px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 40% 100%;
+}
+
+.kotak5 {
+    grid-area: kotak5;
+}
+
+.kotak5 img {
+    position: absolute;
+    width: 415px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'kotak1 kotak2 kotak3'
+        'kotak1 kotak2 kotak3'
+        'kotak1 kotak4 kotak5'
+        'kotak1 kotak4 kotak5';
+    gap: 5px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.grid-container>div {
+    background-color: rgb(188, 188, 188);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.grid-container>div>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    width: 415px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    font-size: 30px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 5px 5px 0 0;
+}
+
+.grid-container>div a:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease-out;
+    opacity: 0.8;
+    background-color: #fff;
+}
+
+/* Grid Header */
+
+/* ===================== */
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 70%;
+}
+
+/* Main - Title Head */
+
+.title-head {
+    font-size: 40px;
+    margin-left: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.a-style {
+    color: black;
+}
+
+.a-style:hover {
+    color: rgb(165, 165, 165);
+}
+
+/* Main - Title Head */
+
+/* Main - Uderline */
+
+.underline {
+    height: 3px;
+    width: 825px;
+    margin-left: 5px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+/* Main - Uderline */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 15px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main - Card Flex */
+
+.card-flex {
+    height: 200px;
+    width: 825px;
+    background-color: rgb(57, 57, 57);
+    margin: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.card-flex>img {
+    width: 350px;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+}
+
+.p-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 20px 0 0 20px;
+    width: 40%;
+    color: #fff;
+}
+
+.p-flex a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.p-flex a:hover {
+    color: rgb(160, 160, 160);
+}
+
+.p-flex>p:first-child {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Main - Card Flex */
+
+/* Main - Title Head Row */
+
+.title-head-row {
+    font-size: 35px;
+    width: 40%;
+    text-align: center;
+}
+
+.title-head-row-pc {
+    font-size: 35px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Main - Title Head Row */
+
+.underline-row {
+    height: 3px;
+    width: 100%;
+    margin: 0 20px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.flex-wrap-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-flex-row {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(122, 122, 122);
+    margin: 15px 5px 30px 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.card-flex-row>img {
+    width: auto;
+    height: 180px;
+    border-radius: 5px 5px 0 5px;
+    flex-direction: column;
+}
+
+.card-flex-row>.p-flex {
+    width: 80%;
+}
+
+.img-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px;
+}
+
+article {
+    margin: 10px 10px 20px 0;
+}
+
+.about-us-image {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+/* Main */
+
+/* Aside */
+aside {
+    margin-right: 10px;
+    width: 30%;
+}
+
+aside p:first-child {
+    text-align: center;
+}
+
+.flex-container-text {
+    margin-bottom: 15px;
+}
+
+.underline-aside {
+    height: 3px;
+    width: auto;
+    background-color: #000;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.flex-text-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-text-aside a {
+    text-decoration: none;
+    margin-bottom: 2px;
+    color: #333;
+    text-align: left;
+}
+
+.flex-text-aside a:hover {
+    color: darkgrey;
+}
+
+.ad-box {
+    margin-top: 30px;
+    width: 370px;
+    height: 370px;
+    background-color: lightslategray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-box p {
+    color: #ddd;
+    opacity: 0.7;
+}
+
+/* Aside */
+
+/* Footer */
+footer {
+    position: relative;
+    display: flex;
+    background-color: rgb(57, 57, 57);
+    color: #fff;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
